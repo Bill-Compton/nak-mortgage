@@ -6,7 +6,7 @@ export const StyledFooter = styled.footer`
   position: relative;
   height: 150px;
   bottom: 0px;
-  border-top: 2px solid black;
+  border-top: 2px solid #5b7f9f;
   margin-top: 20px;
 `;
 

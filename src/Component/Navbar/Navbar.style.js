@@ -5,7 +5,7 @@ export const Nav = styled.nav`
   width: 100%;
   background-color: #fff;
   position: relative;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid #6d6e71;
 `;
 
 export const Image = styled.img`
