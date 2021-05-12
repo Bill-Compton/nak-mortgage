@@ -11,31 +11,29 @@ export const StyledFooter = styled.footer`
 `;
 
 export const Column = styled.div`
-  width: 33%;
+  width: 25%;
   float: left;
+  margin-left: 8%;
 `;
 
 export const Heading = styled.h2`
   width: 84px;
   font-size: 14px;
   font-weight: bold;
-  margin: 20px auto;
   text-decoration: underline;
 `;
 
-export const Span = styled.span`
+export const Span = styled.p`
   font-size: 12px;
-  margin-left: 5px;
 `;
 
 export const Anchor = styled.a`
-    &:hover {
-        color: blue
-    }
-
+  &:hover {
+    color: blue;
+  }
 `;
 
 export const Div = styled.div`
-    width: 100%;
-    margin-bottom: 12px;
+  width: 100%;
+  margin-bottom: 12px;
 `;
