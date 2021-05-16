@@ -1,11 +1,12 @@
 import styled from "styled-components";
+import { colors } from "../Colors"
 
 export const Nav = styled.nav`
   height: 100px;
   width: 100%;
-  background-color: #fff;
+  background-color: ${colors.$white};
   position: relative;
-  border-bottom: 2px solid #6d6e71;
+  border-bottom: 2px solid ${colors.$NAK_Gray};
 `;
 
 export const Image = styled.img`

@@ -1,12 +1,12 @@
 import styled from "styled-components";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { colors } from "../Colors";
 
 export const StyledFooter = styled.footer`
   width: 100%;
   position: relative;
   height: 150px;
   bottom: 0px;
-  border-top: 2px solid #5b7f9f;
+  border-top: 2px solid ${colors.$NAK_Blue};
   margin-top: 20px;
 `;
 
@@ -28,8 +28,14 @@ export const Span = styled.p`
 `;
 
 export const Anchor = styled.a`
-  &:hover {
-    color: blue;
+  margin: 30px 0 0 0;
+  display: block;
+  &:hover,
+  &:focus {
+    color: ${colors.$anchorBlue};
+  }
+  &:focus {
+    border: 2px solid ${colors.$NAK_Blue};
   }
 `;
 

@@ -1,6 +1,12 @@
 import React from "react";
-import { CardContainer, Image, ContentArea, Heading } from "./Card.style";
-//import "./Card.scss";
+import {
+  CardContainer,
+  Image,
+  ContentArea,
+  Heading,
+  ContentMessage,
+  StyledButton,
+} from "./Card.style";
 import GirlWithDog from "../../Images/girl-with-dog.jpg";
 
 export default class Card extends React.Component {
@@ -8,8 +14,6 @@ export default class Card extends React.Component {
     super(props);
   }
   render() {
-    //console.log(GirlWithDog);
-
     return (
       <CardContainer>
         <Image
@@ -19,8 +23,20 @@ export default class Card extends React.Component {
         />
         <ContentArea
           className={`content` + (this.props.lg ? `Large` : `Regular`)}
-            
-        ></ContentArea>
+        >
+          <Heading
+            className={this.props.className}
+            headingMessage={this.props.headingMessage}
+            level={this.props.level}
+          />
+          <ContentMessage>{this.props.messageBody}</ContentMessage>
+          <StyledButton
+            href="https://www.google.com"
+            button="blue"
+            value="Get PreQualified"
+            className={this.props.className}
+          />
+        </ContentArea>
       </CardContainer>
     );
   }
