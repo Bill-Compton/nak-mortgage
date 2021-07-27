@@ -6,7 +6,7 @@ import { Nav, Image } from "./Navbar.style.js";
 class Navbar extends React.Component {
   render() {
     return (
-      <Nav className="navContainer">
+      <Nav className="navContainer" id="navigation">
         <Link to="/">
           <Image className="logoImage" src={Logo} />
         </Link>

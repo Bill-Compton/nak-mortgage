@@ -1,23 +1,47 @@
 import React from "react";
 import { Container } from "./Home.style";
 import Card from "../Card/Card";
-import { GIRL_WITH_DOG_IMAGE } from "../../Constants/Image";
-import { photo } from "../../Images/girl-with-dog.jpg";
-import { BUYING_HOME } from "../../Constants/Messages"
+import { GIRL_WITH_DOG_IMAGE, TEAM_IMAGE } from "../../Constants/Image";
+import { BUYING_HOME, ABOUT_US, PRICING } from "../../Constants/Messages"
 
 export default class Home extends React.Component {
   render() {
     return (
       <Container>
         <Card
+        id="test"
           alt={GIRL_WITH_DOG_IMAGE.alt}
           lg={true}
           headingMessage={BUYING_HOME.title}
           level={2}
           messageBody={BUYING_HOME.message}
-        >
-          {GIRL_WITH_DOG_IMAGE.url}
-        </Card>
+          color="blue"
+          href="https://2133582.my1003app.com/"
+          buttonText="Get PreQualified"
+          image={GIRL_WITH_DOG_IMAGE.url}
+        />
+        <Card
+          alt={TEAM_IMAGE.alt}
+          lg={true}
+          headingMessage={ABOUT_US.title}
+          level={2}
+          messageBody={ABOUT_US.message}
+          link="aboutUs"
+          image={TEAM_IMAGE.url}
+          color="white"
+          buttonText="About Us"
+        />
+        <Card
+          alt={GIRL_WITH_DOG_IMAGE.alt}
+          lg={true}
+          headingMessage={PRICING.title}
+          level={2}
+          messageBody={PRICING.message}
+          color="blue"
+          link="pricing"
+          buttonText="See Pricing"
+          image={GIRL_WITH_DOG_IMAGE.url}
+        />
       </Container>
     );
   }

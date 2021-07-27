@@ -3,17 +3,9 @@ import {
   StyledFooter,
   Column,
   Heading,
-  Span,
-  Anchor,
   Div,
 } from "./Footer.style.js";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFacebook } from "@fortawesome/free-brands-svg-icons";
-import { faHandsHelping } from "@fortawesome/free-solid-svg-icons";
-import {
-  faPhoneSquareAlt,
-  faEnvelope,
-} from "@fortawesome/free-solid-svg-icons";
+import { Anchor } from "../Anchor/Anchor"
 
 class Footer extends React.Component {
   render() {
@@ -21,41 +13,21 @@ class Footer extends React.Component {
       <StyledFooter>
         <Column>
           <Heading>Social Media</Heading>
-          <Anchor href="https://www.facebook.com/katietheloanlady">
-            <Span>
-              <FontAwesomeIcon size="lg" icon={faFacebook} />
-              Facebook
-            </Span>
-          </Anchor>
+          <Anchor href="https://www.facebook.com/katietheloanlady" size="lg" icon="faFacebook" value="Facebook" />
         </Column>
         <Column>
           <Heading>Contact Us</Heading>
           <Div>
-            <Anchor href="tel:(623)606-2055">
-              <Span>
-                <FontAwesomeIcon size="lg" icon={faPhoneSquareAlt} />
-                (623) 606-2055
-              </Span>
-            </Anchor>
+            <Anchor href="tel:(623)606-2055" value="(623) 606-2055" size="lg" icon="faPhoneSquareAlt" />
           </Div>
           <Div>
-            <Anchor href="mailto:katietheloanlady@outlook.com">
-              <Span>
-                <FontAwesomeIcon size="lg" icon={faEnvelope} />
-                katietheloanlady@outlook.com
-              </Span>
-            </Anchor>
+            <Anchor href="mailto:katietheloanlady@outlook.com" value="katietheloanlady@outlook.com" size="lg" icon="faEnvelope" />
           </Div>
         </Column>
         <Column>
           <Heading>Partners</Heading>
           <Div>
-            <Anchor href="https://www.prmg.net/">
-              <Span>
-                <FontAwesomeIcon size="lg" icon={faHandsHelping} />
-                PRMG
-              </Span>
-            </Anchor>
+            <Anchor href="https://www.prmg.net/" value="PRMG" size="lg" icon="faHandsHelping" />
           </Div>
         </Column>
       </StyledFooter>

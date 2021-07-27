@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { colors } from "../Colors"
+import { colors } from "../../Constants/Colors"
 
 export const Nav = styled.nav`
   height: 100px;

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { colors } from "../Colors";
+import { colors } from "../../Constants/Colors";
 
 export const StyledFooter = styled.footer`
   width: 100%;
@@ -7,7 +7,6 @@ export const StyledFooter = styled.footer`
   height: 150px;
   bottom: 0px;
   border-top: 2px solid ${colors.$NAK_Blue};
-  margin-top: 20px;
 `;
 
 export const Column = styled.div`
@@ -21,22 +20,6 @@ export const Heading = styled.h2`
   font-size: 14px;
   font-weight: bold;
   text-decoration: underline;
-`;
-
-export const Span = styled.p`
-  font-size: 12px;
-`;
-
-export const Anchor = styled.a`
-  margin: 30px 0 0 0;
-  display: block;
-  &:hover,
-  &:focus {
-    color: ${colors.$anchorBlue};
-  }
-  &:focus {
-    border: 2px solid ${colors.$NAK_Blue};
-  }
 `;
 
 export const Div = styled.div`

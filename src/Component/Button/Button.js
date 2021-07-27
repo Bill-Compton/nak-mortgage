@@ -1,8 +1,24 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-import { colors } from "../Colors";
+import { colors } from "../../Constants/Colors";
+import { isAllowedKeyPress } from "../../Helpers/events";
 
 export class Button extends Component {
+  constructor(props) {
+    super(props);
+    this.buttonRef = React.createRef();
+    this.handleKeyPress = this.handleKeyPress.bind(this);
+  }
+
+  handleKeyPress(e) {
+    console.log(e);
+    console.log(this.buttonRef);
+    if (isAllowedKeyPress(e)) {
+      e.preventDefault();
+      this.buttonRef.click();
+    }
+  }
+
   render() {
     let StyledButton = styled.a`
       width: 150px;
@@ -54,6 +70,9 @@ export class Button extends Component {
         className={this.props.className}
         button={this.props.button}
         href={this.props.href}
+        target="_blank"
+        onKeyPress={this.handleKeyPress}
+        ref={(el) => (this.buttonRef = el)}
       >
         {this.props.value}
       </StyledButton>
