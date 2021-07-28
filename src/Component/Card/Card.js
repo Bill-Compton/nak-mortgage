@@ -12,6 +12,8 @@ import GirlWithDog from "../../Images/girl-with-dog.jpg";
 import Default from "../../Images/default.jpg";
 import Team from "../../Images/team.jpg";
 import Katie from "../../Images/Katie.jpg";
+import Rates from "../../Images/rates.jpg";
+import { isSpaceKey } from "../../Helpers/events";
 
 export default class Card extends React.Component {
   constructor(props) {
@@ -37,10 +39,19 @@ export default class Card extends React.Component {
       case "Katie":
         this.setState({ image: Katie });
         break;
+      case "Rates":
+        this.setState({ image: Rates });
+        break;
       default:
         this.setState({ image: Default });
     }
   }
+
+  handleKeyPress = (e) => {
+    if (isSpaceKey(e)) {
+      window.location.href = `/${this.props.link}`;
+    }
+  };
 
   render() {
     return (
@@ -72,6 +83,7 @@ export default class Card extends React.Component {
               to={this.props.link}
               button={this.props.color}
               value={this.props.buttonText}
+              onKeyPress={this.handleKeyPress}
             >
               {this.props.buttonText}
             </StyledLink>

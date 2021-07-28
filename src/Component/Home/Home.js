@@ -1,7 +1,7 @@
 import React from "react";
 import { Container } from "./Home.style";
 import Card from "../Card/Card";
-import { GIRL_WITH_DOG_IMAGE, TEAM_IMAGE } from "../../Constants/Image";
+import { GIRL_WITH_DOG_IMAGE, RATES, TEAM_IMAGE } from "../../Constants/Image";
 import { BUYING_HOME, ABOUT_US, PRICING } from "../../Constants/Messages"
 
 export default class Home extends React.Component {
@@ -32,7 +32,7 @@ export default class Home extends React.Component {
           buttonText="About Us"
         />
         <Card
-          alt={GIRL_WITH_DOG_IMAGE.alt}
+          alt={RATES.alt}
           lg={true}
           headingMessage={PRICING.title}
           level={2}
@@ -40,7 +40,7 @@ export default class Home extends React.Component {
           color="blue"
           link="pricing"
           buttonText="See Pricing"
-          image={GIRL_WITH_DOG_IMAGE.url}
+          image={RATES.url}
         />
       </Container>
     );

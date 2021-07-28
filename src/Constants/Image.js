@@ -12,3 +12,8 @@ export const KATIE = {
   url: "Katie",
   alt: "Image of Katie"
 }
+
+export const RATES = {
+  url: "Rates",
+  alt: "Finance Image",
+};
