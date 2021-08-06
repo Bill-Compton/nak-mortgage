@@ -7,13 +7,16 @@ import {
   ContentMessage,
   StyledButton,
   StyledLink,
+  Icon,
 } from "./Card.style";
 import GirlWithDog from "../../Images/girl-with-dog.jpg";
 import Default from "../../Images/default.jpg";
 import Team from "../../Images/team.jpg";
 import Katie from "../../Images/Katie.jpg";
 import Rates from "../../Images/rates.jpg";
+import EHL from "../../Images/EHL.png";
 import ComingSoon from "../../Images/coming-soon.webp";
+import Mortgage from "../../Images/Mortgage.webp";
 import { isSpaceKey } from "../../Helpers/events";
 
 export default class Card extends React.Component {
@@ -21,6 +24,7 @@ export default class Card extends React.Component {
     super(props);
     this.state = {
       image: Default,
+      icon: EHL,
       hasButton: false,
     };
   }
@@ -46,14 +50,17 @@ export default class Card extends React.Component {
       case "ComingSoon":
         this.setState({ image: ComingSoon });
         break;
+      case "Mortgage":
+        this.setState({ image: Mortgage });
+        break;
       default:
         this.setState({ image: Default });
     }
   }
 
-  handleKeyPress = (e) => {
+  handleKeyPress = (e, url) => {
     if (isSpaceKey(e)) {
-      window.location.href = `/${this.props.link}`;
+      window.location.href = url || `/${this.props.link}`;
     }
   };
 
@@ -91,6 +98,23 @@ export default class Card extends React.Component {
             >
               {this.props.buttonText}
             </StyledLink>
+          )}
+          {this.props.icon && (
+            <a
+              target="_blank"
+              href="https://www.hud.gov/program_offices/fair_housing_equal_opp/fair_housing_act_overview"
+              onKeyPress={(e) => {
+                this.handleKeyPress(
+                  e,
+                  "https://www.hud.gov/program_offices/fair_housing_equal_opp/fair_housing_act_overview"
+                );
+              }}
+            >
+              <Icon
+                alt={`Equal Housing Lender Icon`}
+                src={this.state.icon}
+              ></Icon>
+            </a>
           )}
         </ContentArea>
       </CardContainer>

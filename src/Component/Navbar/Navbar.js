@@ -9,8 +9,8 @@ function Navbar() {
       <Link to="/">
         <Image className="logoImage" src={Logo} />
       </Link>
-      <Link to="/aboutUS">About Us</Link>
-      <Link to="/rates">Rates & Tools</Link>
+      <Link to="/AboutUS">About Us</Link>
+      <Link to="/Pricing">Rates & Tools</Link>
       <a href="https://2133582.my1003app.com/">Application</a>
     </Nav>
   );

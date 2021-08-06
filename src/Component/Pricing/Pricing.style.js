@@ -26,7 +26,7 @@ export const RightColumn = styled.div`
   }
 
   #az-rates {
-    margin-top 81px;
+    margin-top -3px;
   }
 `;
 

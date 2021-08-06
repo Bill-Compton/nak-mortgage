@@ -32,6 +32,10 @@ export const Nav = styled.nav`
         transition: ease-in-out 600ms;
       }
 
+      &:focus-visible {
+        outline: none;
+      }
+
       &:first-of-type {
         margin-right: 29%;
         border: unset;
@@ -39,12 +43,17 @@ export const Nav = styled.nav`
         position: relative;
         top: 7px;
 
+        &:hover {
+          background-color: unset;
+        }
+
         &:focus {
           background-color: unset;
 
           & img {
             outline: solid 2px ${colors.$NAK_Gray};
             box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+            background-color: unset;
           }
         }
       }
@@ -58,4 +67,5 @@ export const Image = styled.img`
   position: relative;
   margin-left: 30px;
   margin-bottom: -6px;
+  padding: 2px;
 `;

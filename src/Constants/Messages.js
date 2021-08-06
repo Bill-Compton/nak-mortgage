@@ -30,3 +30,10 @@ export const PRICING = {
   message:
     "Take a look at current average rates in the US and Arizona. Also, use our loan calculator to estimate payments and prepare a budget for your new home",
 };
+
+export const LEGAL = {
+  title: "Equal Housing Lender",
+  message: `NAK Mortgage, LLC is an Equal Housing Lender\n
+    AZ Broker License #MB-1021875\n
+    NMLS #2133582`,
+};

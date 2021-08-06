@@ -1,15 +1,20 @@
 import React from "react";
 import { Container } from "./Home.style";
 import Card from "../Card/Card";
-import { GIRL_WITH_DOG_IMAGE, RATES, TEAM_IMAGE } from "../../Constants/Image";
-import { BUYING_HOME, ABOUT_US, PRICING } from "../../Constants/Messages"
+import { GIRL_WITH_DOG_IMAGE, RATES, TEAM_IMAGE, MORTGAGE } from "../../Constants/Image";
+import {
+  BUYING_HOME,
+  ABOUT_US,
+  PRICING,
+  LEGAL,
+} from "../../Constants/Messages";
 
 export default class Home extends React.Component {
   render() {
     return (
       <Container>
         <Card
-        id="test"
+          id="test"
           alt={GIRL_WITH_DOG_IMAGE.alt}
           lg={true}
           headingMessage={BUYING_HOME.title}
@@ -41,6 +46,15 @@ export default class Home extends React.Component {
           link="pricing"
           buttonText="See Pricing"
           image={RATES.url}
+        />
+        <Card
+          alt={MORTGAGE.alt}
+          lg={true}
+          headingMessage={LEGAL.title}
+          level={2}
+          messageBody={LEGAL.message}
+          image={MORTGAGE.url}
+          icon={true}
         />
       </Container>
     );

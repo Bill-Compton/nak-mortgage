@@ -22,3 +22,8 @@ export const ANDREW = {
   url: "ComingSoon",
   alt: "Placeholder Image",
 };
+
+export const MORTGAGE = {
+  url: "Mortgage",
+  alt: "Mortgage Image",
+};

@@ -31,6 +31,17 @@ export const ContentArea = styled.div`
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   position: relative;
+
+  &:last-of-type a {
+    img {
+      padding: 2px;
+    }
+    
+    &:focus img {
+      border: solid 2px ${colors.$NAK_Gray};
+      box-shadow: 0 4px 8px rgba(0, 0, 0, .5);
+    }
+  }
 `;
 
 export const Heading = styled(Title)`
@@ -106,4 +117,11 @@ export const StyledLink = styled(Link)`
     background-color: ${(props) =>
       props.button === "white" ? colors.$NAK_Gray : colors.$anchorBlue};
   }
+`;
+
+export const Icon = styled.img`
+  position: absolute;
+  height: 75px;
+  bottom: 25px;
+  right: 40px;
 `;
