@@ -5,15 +5,20 @@ export const GIRL_WITH_DOG_IMAGE = {
 
 export const TEAM_IMAGE = {
   url: "Team",
-  alt: "Team Meeting",  
+  alt: "Team Meeting",
 };
 
 export const KATIE = {
   url: "Katie",
-  alt: "Image of Katie"
-}
+  alt: "Image of Katie",
+};
 
 export const RATES = {
   url: "Rates",
   alt: "Finance Image",
+};
+
+export const ANDREW = {
+  url: "ComingSoon",
+  alt: "Placeholder Image",
 };

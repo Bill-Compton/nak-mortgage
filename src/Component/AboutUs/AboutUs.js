@@ -19,13 +19,13 @@ export default class AboutUs extends React.Component {
           image={KATIE.url}
         />
         <StyledCard
-          alt={KATIE.alt}
+          alt={ANDREW.alt}
           lg={true}
           headingMessage={ANDREW.title}
           level={2}
           messageBody={ANDREW.message}
           href="mailto:aj@nakmortgage.com"
-          image={KATIE.url}
+          image={ANDREW.url}
           color="white"
           buttonText="Email AJ"
         />

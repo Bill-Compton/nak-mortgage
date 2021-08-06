@@ -13,6 +13,7 @@ import Default from "../../Images/default.jpg";
 import Team from "../../Images/team.jpg";
 import Katie from "../../Images/Katie.jpg";
 import Rates from "../../Images/rates.jpg";
+import ComingSoon from "../../Images/coming-soon.webp";
 import { isSpaceKey } from "../../Helpers/events";
 
 export default class Card extends React.Component {
@@ -41,6 +42,9 @@ export default class Card extends React.Component {
         break;
       case "Rates":
         this.setState({ image: Rates });
+        break;
+      case "ComingSoon":
+        this.setState({ image: ComingSoon });
         break;
       default:
         this.setState({ image: Default });
