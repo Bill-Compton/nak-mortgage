@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { colors } from "../../Constants/Colors";
+import { colors } from "../../Constants/Styles";
 
 export const Container = styled.div`
   height: 1542px;

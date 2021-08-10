@@ -1,11 +1,11 @@
 import styled from "styled-components";
 import Title from "../Heading/Heading";
 import { Button } from "../Button/Button";
-import { colors } from "../../Constants/Colors";
+import { colors } from "../../Constants/Styles";
 import { Link } from "react-router-dom";
 
 export const CardContainer = styled.div`
-  margin: 75px 2%;
+  margin: 75px 2.5%;
   width: 98%;
   height: 300px;
   background-color: ${colors.$white}

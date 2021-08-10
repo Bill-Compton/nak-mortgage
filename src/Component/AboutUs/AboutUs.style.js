@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { colors } from "../../Constants/Colors";
+import { colors } from "../../Constants/Styles";
 import Card from "../Card/Card";
 
 export const Container = styled.div`

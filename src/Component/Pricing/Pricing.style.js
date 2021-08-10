@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { colors } from "../../Constants/Colors";
+import { colors } from "../../Constants/Styles";
 import Heading from "../Heading/Heading";
 
 export const PricingContainer = styled.div`

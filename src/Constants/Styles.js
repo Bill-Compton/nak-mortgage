@@ -12,3 +12,7 @@ export const colors = {
   //black
   $black: "#333",
 };
+
+export const width = {
+  $mobile: '678px',
+}

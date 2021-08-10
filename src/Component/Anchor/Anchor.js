@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-import { colors } from "../../Constants/Colors";
+import { colors } from "../../Constants/Styles";
 import { isAllowedKeyPress } from "../../Helpers/events";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook } from "@fortawesome/free-brands-svg-icons";
