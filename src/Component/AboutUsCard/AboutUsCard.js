@@ -22,8 +22,6 @@ import { useWindowSize } from "../../Hooks/useWindowSize";
 
 export default function Card(props) {
   const [image, setImage] = useState(Default);
-  const [icon, setIcon] = useState(EHL);
-  const [hasButton, setHasButton] = useState(false);
   let isMobile = useWindowSize();
 
   useEffect(() => {
@@ -34,34 +32,16 @@ export default function Card(props) {
 
   useEffect(() => {
     switch (props.image) {
-      case "Girl":
-        setImage(GirlWithDog);
-        break;
-      case "Team":
-        setImage(Team);
-        break;
       case "Katie":
         setImage(Katie);
-        break;
-      case "Rates":
-        setImage(Rates);
         break;
       case "ComingSoon":
         setImage(ComingSoon);
         break;
-      case "Mortgage":
-        setImage(Mortgage);
-        break;
       default:
-        setImage(Default);
+        setImage(ComingSoon);
     }
   });
-
-  const handleKeyPress = (e, url) => {
-    if (isSpaceKey(e)) {
-      window.location.href = url || `/${this.props.link}`;
-    }
-  };
   return (
     <CardContainer>
       <Image
@@ -76,39 +56,12 @@ export default function Card(props) {
           level={props.level}
         />
         {!isMobile && <ContentMessage>{props.messageBody}</ContentMessage>}
-        {isMobile && props.icon && <ContentMessage>{props.messageBody}</ContentMessage> }
-        {props.href && (
-          <StyledButton
-            href={props.href}
-            button={props.color}
-            value={props.buttonText}
-            className={props.className}
-          />
-        )}
-        {props.link && (
-          <StyledLink
-            to={props.link}
-            button={props.color}
-            value={props.buttonText}
-            onKeyPress={handleKeyPress}
-          >
-            {props.buttonText}
-          </StyledLink>
-        )}
-        {props.icon && (
-          <a
-            target="_blank"
-            href="https://www.hud.gov/program_offices/fair_housing_equal_opp/fair_housing_act_overview"
-            onKeyPress={(e) => {
-              this.handleKeyPress(
-                e,
-                "https://www.hud.gov/program_offices/fair_housing_equal_opp/fair_housing_act_overview"
-              );
-            }}
-          >
-            <Icon alt={`Equal Housing Lender Icon`} src={icon}></Icon>
-          </a>
-        )}
+        <StyledButton
+          href={props.href}
+          button={props.color}
+          value={props.buttonText}
+          className={props.className}
+        />
       </ContentArea>
     </CardContainer>
   );

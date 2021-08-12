@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { colors } from "../../Constants/Styles";
+import { colors, width } from "../../Constants/Styles";
 
 export const StyledFooter = styled.footer`
   width: 100%;
@@ -13,6 +13,10 @@ export const Column = styled.div`
   width: 25%;
   float: left;
   margin-left: 8%;
+
+  @media only screen and (max-width: ${width.$mobile}) {
+    width: 100%;  
+  }
 `;
 
 export const Heading = styled.h2`

@@ -164,16 +164,3 @@ export const StyledLink = styled(Link)`
     margin: 0;
   }
 `;
-
-export const Icon = styled.img`
-  position: absolute;
-  height: 75px;
-  bottom: 25px;
-  right: 40px;
-
-  @media only screen and (max-width: ${width.$mobile}) {
-    height: 55px;
-    bottom: 6px;
-    right: 8px;
-  }
-`;
