@@ -10,3 +10,8 @@ html {
   -ms-overflow-style: none; /* IE 11 */
   scrollbar-width: none;
 }
+
+.bg-dark {
+  display: flex;
+  flex-direction: column;;
+}

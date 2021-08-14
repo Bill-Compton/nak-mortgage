@@ -1,30 +1,13 @@
 import styled from "styled-components";
-import { colors } from "../../Constants/Styles";
-import Card from "../Card/Card";
+import { colors, width } from "../../Constants/Styles";
+import Card from "../AboutUsCard/AboutUsCard";
 
 export const Container = styled.div`
-  height: 1450px;
-  padding-top: 30px;
   background-color: ${colors.$NAK_Blue};
 
-  .imageLarge {
-    width: 240px;
-    border-radius: 50%;
-    margin-right: 20px;
-
-    & + div {
-      width: 78%;
-      height: 728px;
-      border: none;
-      border-radius: 10px;
-      margin-bottom: 40px;
-    }
-  }
-
-  div:nth-child(2) {
-    div {
-      height: 550px;
-    }
+  @media only screen and (max-width: ${width.$mobile}) {
+    height: auto;
+    padding-bottom: 40px;
   }
 `;
 

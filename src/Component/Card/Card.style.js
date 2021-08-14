@@ -6,7 +6,6 @@ import { Link } from "react-router-dom";
 
 export const CardContainer = styled.div`
   margin: 75px 2.5%;
-  width: 97%;
   height: 300px;
   background-color: ${colors.$white}
 
@@ -37,7 +36,7 @@ export const Image = styled.img`
 `;
 
 export const ContentArea = styled.div`
-  width: ${(props) => (props.lg ? `64%` : `48%`)};
+  width: ${(props) => (props.lg ? `64%` : `52%`)};
   float: left;
   height: 300px;
   background-color: ${colors.$white};
