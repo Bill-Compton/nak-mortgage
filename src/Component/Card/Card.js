@@ -9,14 +9,14 @@ import {
   StyledLink,
   Icon,
 } from "./Card.style";
-import GirlWithDog from "../../Images/girl-with-dog.jpg";
+import GetLoan from "../../Images/getLoan.jpeg";
 import Default from "../../Images/default.jpg";
-import Team from "../../Images/team.jpg";
+import Team from "../../Images/team.jpeg";
 import Katie from "../../Images/Katie.jpg";
-import Rates from "../../Images/rates.jpg";
+import Rates from "../../Images/rates.jpeg";
 import EHL from "../../Images/EHL.png";
-import ComingSoon from "../../Images/coming-soon.webp";
-import Mortgage from "../../Images/Mortgage.webp";
+import ComingSoon from "../../Images/comingSoon.svg";
+import EqualHousing from "../../Images/EqualHousing.svg";
 import { isSpaceKey } from "../../Helpers/events";
 import { useWindowSize } from "../../Hooks/useWindowSize";
 
@@ -35,7 +35,7 @@ export default function Card(props) {
   useEffect(() => {
     switch (props.image) {
       case "Girl":
-        setImage(GirlWithDog);
+        setImage(GetLoan);
         break;
       case "Team":
         setImage(Team);
@@ -50,7 +50,7 @@ export default function Card(props) {
         setImage(ComingSoon);
         break;
       case "Mortgage":
-        setImage(Mortgage);
+        setImage(EqualHousing);
         break;
       default:
         setImage(Default);
@@ -76,7 +76,9 @@ export default function Card(props) {
           level={props.level}
         />
         {!isMobile && <ContentMessage>{props.messageBody}</ContentMessage>}
-        {isMobile && props.icon && <ContentMessage>{props.messageBody}</ContentMessage> }
+        {isMobile && props.icon && (
+          <ContentMessage>{props.messageBody}</ContentMessage>
+        )}
         {props.href && (
           <StyledButton
             href={props.href}

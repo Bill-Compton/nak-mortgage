@@ -11,20 +11,13 @@ import {
   ImageContainer,
   TextContainer,
 } from "./AboutUsCard.style";
-import GirlWithDog from "../../Images/girl-with-dog.jpg";
 import Default from "../../Images/default.jpg";
-import Team from "../../Images/team.jpg";
 import Katie from "../../Images/Katie.jpg";
-import Rates from "../../Images/rates.jpg";
-import EHL from "../../Images/EHL.png";
-import ComingSoon from "../../Images/coming-soon.webp";
-import Mortgage from "../../Images/Mortgage.webp";
-import { isSpaceKey } from "../../Helpers/events";
+import ComingSoon from "../../Images/comingSoon.svg";
 import { useWindowSize } from "../../Hooks/useWindowSize";
 
 export default function Card(props) {
   const [image, setImage] = useState(Default);
-  let isMobile = useWindowSize();
 
   useEffect(() => {
     switch (props.image) {
@@ -46,7 +39,7 @@ export default function Card(props) {
           src={image}
           className={`image` + (props.lg ? `Large` : `Regular`)}
         />
-      </ImageContainer>
+        </ImageContainer>
       <ContentArea className={`content` + (props.lg ? `Large` : `Regular`)}>
         <TextContainer>
           <Heading
