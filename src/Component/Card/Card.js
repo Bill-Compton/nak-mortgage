@@ -9,11 +9,11 @@ import {
   StyledLink,
   Icon,
 } from "./Card.style";
-import GetLoan from "../../Images/getLoan.jpeg";
+import GetLoan from "../../Images/getLoan.jpg";
 import Default from "../../Images/default.jpg";
-import Team from "../../Images/team.jpeg";
+import Team from "../../Images/team.jpg";
 import Katie from "../../Images/Katie.jpg";
-import Rates from "../../Images/rates.jpeg";
+import Rates from "../../Images/rates.jpg";
 import EHL from "../../Images/EHL.png";
 import ComingSoon from "../../Images/comingSoon.svg";
 import EqualHousing from "../../Images/EqualHousing.svg";
