@@ -17,6 +17,7 @@ import Rates from "../../Images/rates.jpg";
 import EHL from "../../Images/EHL.png";
 import ComingSoon from "../../Images/comingSoon.svg";
 import EqualHousing from "../../Images/EqualHousing.svg";
+import EqualHousingMobile from "../../Images/EqualHousingMobile.svg";
 import { isSpaceKey } from "../../Helpers/events";
 import { useWindowSize } from "../../Hooks/useWindowSize";
 
@@ -50,7 +51,11 @@ export default function Card(props) {
         setImage(ComingSoon);
         break;
       case "Mortgage":
-        setImage(EqualHousing);
+        if (isMobile) {
+          setImage(EqualHousingMobile);
+        } else {
+          setImage(EqualHousing);
+        }
         break;
       default:
         setImage(Default);

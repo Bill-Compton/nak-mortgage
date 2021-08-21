@@ -35,6 +35,22 @@ export const Image = styled.img`
   }
 `;
 
+export const styledSVG = styled.svg`
+  width: ${(props) => (props.lg ? `64%` : `48%`)};
+  float: left;
+  height: 300px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+
+  @media only screen and (max-width: ${width.$mobile}) {
+    float: none;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: unset;
+  }
+`;
+
 export const ContentArea = styled.div`
   width: ${(props) => (props.lg ? `64%` : `52%`)};
   float: left;
