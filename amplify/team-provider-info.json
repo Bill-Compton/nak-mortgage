@@ -1,0 +1,26 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-nakmortgage-dev-135400-authRole",
+      "UnauthRoleArn": "arn:aws:iam::674158811912:role/amplify-nakmortgage-dev-135400-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::674158811912:role/amplify-nakmortgage-dev-135400-authRole",
+      "Region": "us-west-2",
+      "DeploymentBucketName": "amplify-nakmortgage-dev-135400-deployment",
+      "UnauthRoleName": "amplify-nakmortgage-dev-135400-unauthRole",
+      "StackName": "amplify-nakmortgage-dev-135400",
+      "StackId": "arn:aws:cloudformation:us-west-2:674158811912:stack/amplify-nakmortgage-dev-135400/15875190-038b-11ec-88dd-06fd29b49229",
+      "AmplifyAppId": "d3w5awldcranog"
+    },
+    "categories": {
+      "auth": {
+        "nakmortgage408cda94": {}
+      },
+      "storage": {
+        "nakmortgage60c13870": {
+          "bucketName": "nak-assets",
+          "region": "us-west-1"
+        }
+      }
+    }
+  }
+}

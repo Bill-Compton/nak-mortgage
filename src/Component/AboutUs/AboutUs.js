@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, StyledCard } from "./AboutUs.style";
-import { KATIE, TEAM_IMAGE } from "../../Constants/Image";
-import { KATIE_COMPTON, ANDREW } from "../../Constants/Messages";
+import { KATIE, ANDREW } from "../../Constants/Image";
+import { KATIE_COMPTON, ANDREW_JEFFERY } from "../../Constants/Messages";
 
 export default function AboutUs() {
   return (
@@ -20,9 +20,9 @@ export default function AboutUs() {
       <StyledCard
         alt={ANDREW.alt}
         lg={true}
-        headingMessage={ANDREW.title}
+        headingMessage={ANDREW_JEFFERY.title}
         level={2}
-        messageBody={ANDREW.message}
+        messageBody={ANDREW_JEFFERY.message}
         href="mailto:aj@nakmortgage.com"
         image={ANDREW.url}
         color="white"

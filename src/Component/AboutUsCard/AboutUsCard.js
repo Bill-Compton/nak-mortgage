@@ -11,13 +11,15 @@ import {
   ImageContainer,
   TextContainer,
 } from "./AboutUsCard.style";
-import Default from "../../Images/default.jpg";
-import Katie from "../../Images/Katie.jpg";
-import ComingSoon from "../../Images/comingSoon.svg";
-import { useWindowSize } from "../../Hooks/useWindowSize";
 
 export default function Card(props) {
-  const [image, setImage] = useState(Default);
+  const [image, setImage] = useState(
+    "https://nak-assets.s3.us-west-1.amazonaws.com/images/comingSoon.svg"
+  );
+  const Katie =
+    "https://nak-assets.s3.us-west-1.amazonaws.com/images/Katie.jpg";
+  const Default =
+    "https://nak-assets.s3.us-west-1.amazonaws.com/images/comingSoon.svg";
 
   useEffect(() => {
     switch (props.image) {
@@ -25,10 +27,10 @@ export default function Card(props) {
         setImage(Katie);
         break;
       case "ComingSoon":
-        setImage(ComingSoon);
+        setImage(Default);
         break;
       default:
-        setImage(ComingSoon);
+        setImage(Default);
     }
   });
   return (
@@ -39,7 +41,7 @@ export default function Card(props) {
           src={image}
           className={`image` + (props.lg ? `Large` : `Regular`)}
         />
-        </ImageContainer>
+      </ImageContainer>
       <ContentArea className={`content` + (props.lg ? `Large` : `Regular`)}>
         <TextContainer>
           <Heading

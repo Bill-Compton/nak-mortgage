@@ -9,19 +9,22 @@ import {
   StyledLink,
   Icon,
 } from "./Card.style";
-import GetLoan from "../../Images/getLoan.jpg";
-import Default from "../../Images/default.jpg";
-import Team from "../../Images/team.jpg";
-import Katie from "../../Images/Katie.jpg";
-import Rates from "../../Images/rates.jpg";
-import EHL from "../../Images/EHL.png";
-import ComingSoon from "../../Images/comingSoon.svg";
-import EqualHousing from "../../Images/EqualHousing.svg";
-import EqualHousingMobile from "../../Images/EqualHousingMobile.svg";
 import { isSpaceKey } from "../../Helpers/events";
 import { useWindowSize } from "../../Hooks/useWindowSize";
 
 export default function Card(props) {
+  const EHL = "https://nak-assets.s3.us-west-1.amazonaws.com/images/EHL.png";
+  const Rates =
+    "https://nak-assets.s3.us-west-1.amazonaws.com/images/rates.jpg";
+  const GetLoan =
+    "https://nak-assets.s3.us-west-1.amazonaws.com/images/getLoan.jpg";
+  const Team = "https://nak-assets.s3.us-west-1.amazonaws.com/images/team.jpg";
+  const EqualHousing =
+    "https://nak-assets.s3.us-west-1.amazonaws.com/images/EqualHousing.svg";
+  const EqualHousingMobile =
+    "https://nak-assets.s3.us-west-1.amazonaws.com/images/EqualHousingMobile.svg";
+  const Default =
+    "https://nak-assets.s3.us-west-1.amazonaws.com/images/comingSoon.svg";
   const [image, setImage] = useState(Default);
   const [icon, setIcon] = useState(EHL);
   const [hasButton, setHasButton] = useState(false);
@@ -41,14 +44,8 @@ export default function Card(props) {
       case "Team":
         setImage(Team);
         break;
-      case "Katie":
-        setImage(Katie);
-        break;
       case "Rates":
         setImage(Rates);
-        break;
-      case "ComingSoon":
-        setImage(ComingSoon);
         break;
       case "Mortgage":
         if (isMobile) {

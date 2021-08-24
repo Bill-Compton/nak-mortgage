@@ -7,6 +7,9 @@ import Footer from "./Component/Footer/Footer";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Pricing from "./Component/Pricing/Pricing";
 import AboutUs from "./Component/AboutUs/AboutUs"
+import Amplify, { Storage } from "aws-amplify";
+import awsconfig from "./aws-exports";
+Amplify.configure(awsconfig);
 
 class App extends React.Component {
   render() {

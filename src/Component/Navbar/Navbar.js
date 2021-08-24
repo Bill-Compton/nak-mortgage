@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useWindowSize } from "../../Hooks/useWindowSize";
-import Logo from "../../Images/NAK-Logo.svg";
 import {
   Nav,
   Image,
@@ -11,6 +10,8 @@ import {
 } from "./Navbar.style.js";
 
 function Navbar() {
+  const Logo =
+    "https://nak-assets.s3.us-west-1.amazonaws.com/images/NAK-Logo.svg";
   let isMobile = useWindowSize();
   let rates = isMobile ? "Rates" : "Rates & Tools";
   let app = isMobile ? "App" : "Application";
