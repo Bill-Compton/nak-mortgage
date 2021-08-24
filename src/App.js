@@ -6,7 +6,7 @@ import Navbar from "./Component/Navbar/Navbar";
 import Footer from "./Component/Footer/Footer";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Pricing from "./Component/Pricing/Pricing";
-import AboutUs from "./Component/AboutUs/AboutUs"git 
+import AboutUs from "./Component/AboutUs/AboutUs";
 
 class App extends React.Component {
   render() {
