@@ -17,7 +17,7 @@ export default function Card(props) {
     "https://nak-assets.s3.us-west-1.amazonaws.com/images/comingSoon.svg"
   );
   const Katie =
-    "https://nak-assets.s3.us-west-1.amazonaws.com/images/Katie.jpg";
+    "https://nak-assets.s3.us-west-1.amazonaws.com/images/Katie.jpeg";
   const Default =
     "https://nak-assets.s3.us-west-1.amazonaws.com/images/comingSoon.svg";
 

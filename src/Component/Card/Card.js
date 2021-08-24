@@ -15,10 +15,10 @@ import { useWindowSize } from "../../Hooks/useWindowSize";
 export default function Card(props) {
   const EHL = "https://nak-assets.s3.us-west-1.amazonaws.com/images/EHL.png";
   const Rates =
-    "https://nak-assets.s3.us-west-1.amazonaws.com/images/rates.jpg";
+    "https://nak-assets.s3.us-west-1.amazonaws.com/images/rates.jpeg";
   const GetLoan =
-    "https://nak-assets.s3.us-west-1.amazonaws.com/images/getLoan.jpg";
-  const Team = "https://nak-assets.s3.us-west-1.amazonaws.com/images/team.jpg";
+    "https://nak-assets.s3.us-west-1.amazonaws.com/images/getLoan.jpeg";
+  const Team = "https://nak-assets.s3.us-west-1.amazonaws.com/images/team.jpeg";
   const EqualHousing =
     "https://nak-assets.s3.us-west-1.amazonaws.com/images/EqualHousing.svg";
   const EqualHousingMobile =
