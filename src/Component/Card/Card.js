@@ -13,18 +13,15 @@ import { isSpaceKey } from "../../Helpers/events";
 import { useWindowSize } from "../../Hooks/useWindowSize";
 
 export default function Card(props) {
-  const EHL = "https://nak-assets.s3.us-west-1.amazonaws.com/images/EHL.png";
-  const Rates =
-    "https://nak-assets.s3.us-west-1.amazonaws.com/images/rates.jpeg";
-  const GetLoan =
-    "https://nak-assets.s3.us-west-1.amazonaws.com/images/getLoan.jpeg";
-  const Team = "https://nak-assets.s3.us-west-1.amazonaws.com/images/team.jpeg";
+  const EHL = "https://d1g5n2x1uyxgrd.cloudfront.net/images/EHL.png";
+  const Rates = "https://d1g5n2x1uyxgrd.cloudfront.net/images/rates.jpeg";
+  const GetLoan = "https://d1g5n2x1uyxgrd.cloudfront.net/images/getLoan.jpeg";
+  const Team = "https://d1g5n2x1uyxgrd.cloudfront.net/images/team.jpeg";
   const EqualHousing =
-    "https://nak-assets.s3.us-west-1.amazonaws.com/images/EqualHousing.svg";
+    "https://d1g5n2x1uyxgrd.cloudfront.net/images/EqualHousing.svg";
   const EqualHousingMobile =
-    "https://nak-assets.s3.us-west-1.amazonaws.com/images/EqualHousingMobile.svg";
-  const Default =
-    "https://nak-assets.s3.us-west-1.amazonaws.com/images/comingSoon.svg";
+    "https://d1g5n2x1uyxgrd.cloudfront.net/images/EqualHousingMobile.svg";
+  const Default = "https://d1g5n2x1uyxgrd.cloudfront.net/images/comingSoon.svg";
   const [image, setImage] = useState(Default);
   const [icon, setIcon] = useState(EHL);
   const [hasButton, setHasButton] = useState(false);
@@ -66,11 +63,7 @@ export default function Card(props) {
   };
   return (
     <CardContainer>
-      <Image
-        alt={props.alt}
-        src={image}
-        className={`image` + (props.lg ? `Large` : `Regular`)}
-      />
+      <Image alt={props.alt} src={image} />
       <ContentArea className={`content` + (props.lg ? `Large` : `Regular`)}>
         <Heading
           className={props.className}
