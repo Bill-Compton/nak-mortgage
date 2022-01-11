@@ -14,6 +14,7 @@ import { useWindowSize } from "../../Hooks/useWindowSize";
 
 export default function Card(props) {
   const EHL = "https://d1g5n2x1uyxgrd.cloudfront.net/images/EHL.png";
+  const AJ = "https://d1g5n2x1uyxgrd.cloudfront.net/images/AJ.jpeg";
   const Rates = "https://d1g5n2x1uyxgrd.cloudfront.net/images/rates.jpeg";
   const GetLoan = "https://d1g5n2x1uyxgrd.cloudfront.net/images/getLoan.jpeg";
   const Team = "https://d1g5n2x1uyxgrd.cloudfront.net/images/team.jpeg";

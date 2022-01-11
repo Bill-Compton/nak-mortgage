@@ -16,15 +16,18 @@ export default function Card(props) {
   const [image, setImage] = useState(
     "https://nak-assets.s3.us-west-1.amazonaws.com/images/comingSoon.svg"
   );
-  const Katie =
-    "https://nak-assets.s3.us-west-1.amazonaws.com/images/Katie.jpeg";
-  const Default =
-    "https://nak-assets.s3.us-west-1.amazonaws.com/images/comingSoon.svg";
+  const Katie = "https://d1g5n2x1uyxgrd.cloudfront.net/images/Katie.jpeg";
+  const AJ = "https://d1g5n2x1uyxgrd.cloudfront.net/images/AJ.jpeg";
+  const Default = "https://d1g5n2x1uyxgrd.cloudfront.net/images/comingSoon.svg";
 
   useEffect(() => {
+    console.log(props.image);
     switch (props.image) {
       case "Katie":
         setImage(Katie);
+        break;
+      case "AJ":
+        setImage(AJ);
         break;
       case "ComingSoon":
         setImage(Default);

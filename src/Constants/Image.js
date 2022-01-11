@@ -19,8 +19,8 @@ export const RATES = {
 };
 
 export const ANDREW = {
-  url: "ComingSoon",
-  alt: "Placeholder Image",
+  url: "AJ",
+  alt: "Image of Andrew Jeffery",
 };
 
 export const MORTGAGE = {

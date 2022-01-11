@@ -66,7 +66,7 @@ export const Heading = styled(Title)`
     font-size: 20px;
     line-height: 30px;
     padding-top: 10px;
-    width: 190px;
+    width: 194px;
     margin: 10px auto;
   }
 `;
